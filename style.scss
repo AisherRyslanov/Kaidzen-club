@@ -1,67 +1,369 @@
 @import "reset";
 
-#header{
-  .header{
-    
-  }
+body {
+  background: black;
+  font-family: 'Poppins', sans-serif;
 }
 
-#section{
-  .section{
-
-  }
-}
-
-#missionClub{
-  .missionClub{
+#header {
+  .header {
 
   }
 }
 
-#kaidzenClub{
-  .kaidzenClub{
+#section {
+  .section {
 
   }
 }
 
-#travels{
-  .travels{
+#missionClub {
+  .missionClub {
 
   }
 }
 
-#inwestClub{
-  .inwestClub{
+#kaidzenClub {
+  .kaidzenClub {
 
   }
 }
 
-#geography{
-  .geography{
+#travels {
+  .travels {
 
   }
 }
 
-#package{
-  .package{
+#inwestClub {
+  .inwestClub {
 
   }
 }
 
-#help{
-  .help{
+#geography {
+  background: black;
 
+  .geography {
+    &__participants {
+      @include participants
+    }
+
+    &__entry {
+      font-size: 36px;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0 0 0;
+    }
+
+    &__process h1, h4, small {
+      font-family: 'Poppins', sans-serif;
+      color: #eeeeee;
+    }
+
+    &__process {
+      padding: 0 0 0 100px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__cart {
+
+    }
   }
 }
 
-#rewievse{
-  .rewievse{
+#package {
+  padding: 100px;
 
+  .package {
+    &__choice {
+      font-size: 36px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__we {
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__Base {
+      width: 310px;
+      height: 370px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      margin-top: 30px;
+
+    }
+
+    &__Busines {
+      width: 310px;
+      height: 400px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      margin-left: 50px;
+
+    }
+
+    &__Premium {
+      width: 310px;
+      height: 370px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      margin-left: 50px;
+      margin-top: 30px;
+    }
+
+    &__Rod {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    &__sixMonths {
+      font-size: 12px;
+      color: #FFFFFF;
+      width: 80px;
+      height: 20px;
+      background: #9099A3;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    &__sell {
+      font-size: 36px;
+      color: #2C3E50;
+    }
+
+    &__sub {
+      font-size: 18px;
+      color: #FFFFFF;
+      width: 280px;
+      height: 50px;
+      background: #2C3E50;
+      border-radius: 15px;
+    }
+
+    &__pod {
+      font-size: 16px;
+      color: #2C3E50;
+      text-decoration: none;
+      padding: 80px;
+    }
+
+    &__rec {
+      width: 310px;
+      height: 30px;
+      background: #1A5CFF;
+      border-radius: 15px 15px 0px 0px;
+    }
+
+    &__rec small {
+      color: #FFFFFF;
+      padding: 100px;
+      font-size: 14px;
+
+    }
+
+    &__sub2 {
+      width: 280px;
+      height: 50px;
+      background: #1A5CFF;
+      border-radius: 15px;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
   }
 }
 
-#footer{
-  .footer{
+#help {
+  .help {
+    &__choice{
+      font-size: 36px;
+      color: #FFFFFF;
+      padding: 0 0 0 80px;
+    }
+    &__request{
+      font-size: 16px;
+      color: #9099A3;
+      padding: 0 0 0 80px;
+    }
+    &__ivan{
+      width: 616px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+    }
+    &__fio{
+      font-size: 14px;
+      color: #9099A3;
+    }
+    &__name{
+      display: flex;
+      flex-direction: column;
+      padding:  0 0 0 550px;
+      margin-top: -140px;
+    }
+    &__phone{
+      display: flex;
+      flex-direction: column;
+      padding:  0 0 0 550px;
+      margin-top: 30px;
+    }
+    &__room{
+      font-size: 14px;
+      color: #9099A3;
+    }
+    &__rooming{
+      width: 616px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+    }
+    &__gmail{
+      display: flex;
+      flex-direction: column;
+      padding:  0 0 0 550px;
+      margin-top: 30px;
+    }
+    &__email{
+      font-size: 14px;
+      color: #9099A3;
+    }
+    &__exam{
+      width: 616px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+    }
+    &__data{
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    &__mass{
+      font-size: 18px;
+      color: #FFFFFF;
+      width: 280px;
+      height: 60px;
+      background: #1A5CFF;
+      box-shadow: 0px 5px 8px rgba(26, 92, 255, 0.2);
+      border-radius: 15px;
+    }
+    &__fin{
+      padding: 30px 0 0 550px;
+    }
+  }
+}
 
+#rewievse {
+  .rewievse {
+    &__questions{
+      font-size: 36px;
+      color: #FFFFFF;
+      padding: 50px 0 0 70px;
+    }
+    &__remain{
+      font-size: 144px;
+      color: #1A5CFF;
+      padding: 0 0 0 100px;
+      margin-top: -70px;
+    }
+    &__acardion{
+      color: #FFFFFF;
+      margin-left: 500px;
+      margin-top: -400px;
+      padding: 0 0 200px 0;
+      width: 645px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+}
+
+#footer {
+  padding: 100px 0 0 0;
+  .footer {
+    &__comlogo{
+      padding: 0 60px;
+    }
+    &__akylbek{
+      margin-left: 250px;
+      margin-top: -100px;
+    }
+    &__Said{
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    &__kaidzenK{
+      font-size: 14px;
+      color: #9099A3;
+    }
+    &__comein{
+      font-size: 14px;
+      color: #FFFFFF;
+      width: 100px;
+      height: 40px;
+      background: #1A5CFF;
+      box-shadow: 0px 5px 8px rgba(26, 92, 255, 0.2);
+      border-radius: 15px;
+    }
+    &__cont{
+      margin-left: 550px;
+      margin-top: -160px;
+    }
+    &__connection{
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    &__masswe{
+      font-size: 14px;
+      color: #9099A3;
+    }
+    &__icon{
+      color: #FFFFFF;
+      font-size: 30px;
+    }
+    &__sub{
+      margin-left: 940px;
+      margin-top: -160px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__inp{
+      width: 260px;
+      height: 40px;
+      font-size: 12px;
+      color: #2C3E50;
+
+      background: #FFFFFF;
+      box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 15px;
+
+    }
+    &__new{
+      font-size: 12px;
+      color: #1A5CFF
+    }
+    &__kz{
+      font-size: 14px;
+      color: #9099A3;
+    }
+    &__copyright{
+      font-size: 10px;
+      color: #9099A3;
+      padding: 0 0 0 100px;
+    }
   }
 }
