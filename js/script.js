@@ -1,7 +1,6 @@
-let swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
-    slidesPerView: 3.5,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -15,6 +14,3 @@ let swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-
-
-
